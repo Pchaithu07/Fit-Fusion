@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorie Calculator</title>
+    <link rel="stylesheet" href="css/calorie.css">
+</head>
+<body>
+    <div class="calorie">
+        <div class="heading">
+            <h2>Calorie Calculator</h2>
+        </div>
+        <div class="control">
+            <form>
+                <h3>Age</h3>
+                <input type="text" id="age" placeholder="Enter age"/>
+
+                <div class="gender">
+                    <h3>Gender</h3>
+                    <input type="radio" id="male" value="male" name="gender"/>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" value="female" name="gender"/>
+                    <label for="female">Female</label>
+                </div>
+                <div class="height">
+                    <h3>Height</h3>
+                    <input type="text" id="height" placeholder="Enter height"/>
+                    <div class="unit">cm</div>
+                </div>
+
+                <div class="weight">
+                    <h3>Weight</h3>
+                    <input type="text" id="weight" placeholder="Enter weight"/>
+                    <div class="unit">kg</div>
+                </div>
+                <div class="activity">
+                    <label for="activity">Select your activity level</label>
+                    <select name="activity" id="activity">
+                        <option value="Sedentary">Sedentary</option>
+                        <option value="Lightly Active">Lightly Active</option>
+                        <option value="Moderately Active">Moderately Active</option>
+                        <option value="Very Active">Very Active</option>
+                        <option value="Extra Active">Extra Active</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+
+        <div class="result">
+            <button class="calculate" id="btn">Calculate</button>
+            <div class="calorie-result" style="display: none;">
+                <div class="calories"></div>
+                <button class="food-choice-btn" id="food-btn">Get Your Food Choice</button>
+            </div>
+            <div class="error">
+                <p>Please enter all the details correctly</p>
+            </div>
+        </div>
+
+        <div class="food-choices" style="display: none;">
+            <h3>Select Your Region</h3>
+            <select id="region">
+                <option value="Indian">Indian</option>
+                <option value="Continental">Continental</option>
+            </select>
+
+            <h3>Select Your Monthly Budget</h3>
+            <select id="budget">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <h3>Select Food Type</h3>
+            <select id="food-type">
+                <option value="Veg">Veg</option>
+                <option value="Non-Veg">Non-Veg</option>
+            </select>
+
+            <div><button class="food-choice-submit" id="get-food">Find Your Meal</button></div>
+
+            <div id="food-chart" style="display: none;">
+                
+            </div>
+            
+    <footer style="text-align: center; margin-top: 20px;">
+        <a href="index.html" style="text-decoration: none;">
+            <i class="fas fa-arrow-left"></i>Back
+        </a>
+    </footer>
+        </div>
+    </div>
+
+    <script src="js/calorie.js"></script>
+    <script src="js/foodchoice.js"></script>
+</body>
+</html>

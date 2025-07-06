@@ -1,0 +1,152 @@
+/* Reset and background video styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', cursive;
+    color: #ffffff;
+    overflow: hidden; /* Hide overflow to prevent scrollbars */
+}
+
+#background-video {
+    position: absolute; /* Position video absolutely */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Cover the entire background */
+    z-index: -1; /* Send video behind content */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative; /* Ensure header stays on top of video */
+    z-index: 1; /* Higher z-index to ensure it is above video */
+}
+
+.left img {
+    width: 110px;
+}
+
+.left div {
+    color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.mid .navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 25px;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 22px;  /* Increased font size */
+    padding: 15px 28px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+.navbar li a:hover {
+    background-color: orangered;
+    color: #ffffff;
+}
+
+.right {
+    display: flex;
+    gap: 15px;  /* Adds space between buttons */
+    align-items: center;  /* Aligns buttons with text */
+}
+
+.right .btn {
+    background-color: black;
+    color: aliceblue;
+    padding: 8px 12px;
+    border: 2px solid grey;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right .btn:hover {
+    background-color: rgb(67, 66, 66);
+}
+
+.right .btn img {
+    width: 25px;
+    filter: invert(100%);
+}
+
+.home {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.home-content {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 50px;
+    border-radius: 10px;
+    position: relative; /* Ensure content stays above video */
+    z-index: 1; /* Higher z-index to ensure it is above video */
+}
+
+.home-content .text-1 {
+    font-size: 40px;  /* Increased font size */
+    font-weight: bold;  /* Made the text bold */
+}
+
+.home-content .text-2 {
+    font-size: 65px;  /* Increased font size */
+    font-weight: 700;  /* Made the text bolder */
+    color: rgb(220, 116, 5);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Added text shadow */
+}
+
+.home-content .text-3 {
+    font-size: 40px;  /* Increased font size */
+    margin: 10px 0;
+    font-weight: bold;  /* Made the text bold */
+}
+
+.home-content .text-3 span {
+    color: rgb(244, 197, 25);
+    font-weight: 600;
+}
+
+.home-content a {
+    display: inline-block;
+    background: rgb(16, 116, 193);
+    color: #fff;
+    font-size: 28px;  /* Increased font size */
+    padding: 15px 45px;  /* Adjusted padding */
+    margin-top: 30px;
+    font-weight: 500;
+    border-radius: 6px;
+    border: 2px solid rgb(20, 100, 220);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.home-content a:hover {
+    color: rgb(17, 94, 196);
+    background: none;
+    border-color: rgb(17, 94, 196);
+}
